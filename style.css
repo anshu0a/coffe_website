@@ -20,7 +20,10 @@ header,
 .prt4,
 .prt4>.box1,
 .prt4>.box2,
-.prt4>.box2>div {
+.prt4>.box2>div,
+footer,
+footer>div,
+footer>div>.wb {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,11 +179,39 @@ padding-bottom: 70px;
     color: rgb(119, 60, 28);
     width:100%;
     flex-direction: column;
-    padding: 70px 0;
+    padding: 70px  0 0 0;
 
 }
 .prt6>p{
     width:70%;
     font-size: 20px;
     text-align: center;
+}
+footer{
+    gap:50px;
+    width:calc(100% - 80px);
+    padding:50px 40px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+footer>img{
+    object-position: center;
+    object-fit: cover;
+    width:300px;
+}
+footer>div{
+    flex: 1 1 700px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer>div>.bold{
+    font-size: 25px;
+}
+footer>div>.wb{
+    padding:0px 10px;
+    color:white;
+    gap:5px;
+    background-color: rgb(126, 126, 126);
+    width:auto;
 }
